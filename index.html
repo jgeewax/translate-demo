@@ -1,10 +1,50 @@
 <html>
   <head>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/comparator.js"></script>
+    <script type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript"
+      src="https://www.google.com/jsapi?key=AIzaSyBthXImCg3o-TbPm4hukoi2mOvhFO9gQTI"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <h1>Language comparisons</h1>
+    <div id="main" class="centered">
+      
+      <h1>Google Translate API demo!</h1>
+      <h2>Type in a word or phrase and see it in many different languages!</h2>
+      
+      <p class="note">
+        This uses "auto-detect" for the source language, meaning that if you
+        type in "hello", it assumes you are starting from English. If you type
+        in "hola", it will assume you are starting from Spanish.
+      </p>
+      
+      <div id="form-container">
+        <form id="compare">
+          <input type="text" name="word" id="word"
+            placeholder="Enter a word or phrase..." />
+          <input type="submit" value="Translate" />
+        </form>
+      </div>
+      
+      <div id="results-container">
+        <div id="result-template" class="result" style="display: none;">
+          <h1 class="result-language"></h1>
+          <h2 class="result-translation"></h2>
+        </div>
+      </div>
+      
+      <div id="filter-container">
+        <ul id="languages">
+          <li id="language-template" class="language" style="display: none;">
+            <a class="language-name"></a>
+          </li>
+        </ul>
+      </div>
+      
+      <div style="clear: both;"></div>
+    </div>
   </body>
 </html>
