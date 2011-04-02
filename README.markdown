@@ -1,6 +1,7 @@
 # Google Translate API Demo
 
-This is a simple demonstration of the Google Translate Javascript API. 
+This is a simple demonstration of the Google Translate Javascript API.
+Check out the live demonstration here: [http://jgeewax.github.com/translate-demo/][demo]
 
 ## How to run it on your local machine...
 
@@ -9,3 +10,5 @@ This is a simple demonstration of the Google Translate Javascript API.
     jj@im-jj:~/translate-demo$ python -m SimpleHTTPServer 8080
 
 And then go to http://localhost:8080/ in your browser.
+
+[demo]: http://jgeewax.github.com/translate-demo/
